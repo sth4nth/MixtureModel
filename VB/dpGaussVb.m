@@ -109,10 +109,14 @@ Elogpi = psi(0,alpha)-psi(0,sum(alpha)); % 10.66
 logRho = -0.5*bsxfun(@minus,EQ,ElogLambda-d*log(2*pi)); % 10.46
 logRho = bsxfun(@plus,logRho,Elogpi);   % 10.46
 logR = bsxfun(@minus,logRho,logsumexp(logRho,2)); % 10.49
-R = exp(logR);
+
+
+%%
+[~,label] = max(logR,[],2);
+logR = logR(:,unique(label));
 
 model.logR = logR;
-model.R = R;
+model.R = exp(logR);
 
 % Done
 function L = bound(X, model, prior)
