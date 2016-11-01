@@ -1,5 +1,5 @@
 function [label, model, bound] = vbsgm(X, init, prior)
-% Perform variational Bayesian inference for spherical (isotropic) Gaussian mixture.
+% Variational Bayesian spherical (isotropic) Gaussian mixture.
 %   X: d x n data matrix
 %   init: k (1 x 1) or label (1 x n, 1<=label(i)<=k) or center (d x k)
 % Written by Michael Chen (sth4nth@gmail.com).

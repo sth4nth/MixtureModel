@@ -1,5 +1,5 @@
 function [label, model, bound] = vbigm(X, init, prior)
-% Perform variational Bayesian inference for independent Gaussian mixture.
+% Variational Bayesian independent Gaussian mixture.
 %   X: d x n data matrix
 %   init: k (1 x 1) or label (1 x n, 1<=label(i)<=k) or center (d x k)
 % Written by Michael Chen (sth4nth@gmail.com).

@@ -1,5 +1,5 @@
 function [label, model, bound] = vbacsgm(X, init, prior)
-% variational empirical Bayesian approximate collapsed spherical Gaussian mixture 
+% variational Bayesian approximate collapsed spherical Gaussian mixture 
 % TODO: 
 % 1) noninformative prior
 if nargin < 3

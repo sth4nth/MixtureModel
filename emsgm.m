@@ -1,5 +1,5 @@
 function [label, model, llh] = emsgm(X, init)
-% EM algorithm for spherical (isotropic) Gaussian mixture model
+% EM spherical (isotropic) Gaussian mixture
 % Written by Michael Chen (sth4nth@gmail.com).
 fprintf('EM for spherical (isotropic) Gaussian mixture: running ... \n');
 R = initialization(X, init);

@@ -1,5 +1,5 @@
 function [label, model, bound] = cvbigm(X, init, prior)
-% Collapsed variational isotropic Gaussian mixture
+% Collapsed variational Bayesian isotropic Gaussian mixture
 % mixing coefficients are marginalized out of the model
 if nargin < 3
     prior.eta = 1;        % noninformative setting of Dirichet prior 

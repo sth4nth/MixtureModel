@@ -1,10 +1,8 @@
 function [label, model, bound] = vbkmeans(X, init, prior)
-% Perform variational Bayesian inference for isotropic Gaussian mixture.
+% Variational Bayesian kmeans
 %   X: d x n data matrix
 %   init: k (1 x 1) or label (1 x n, 1<=label(i)<=k) or center (d x k)
 % Written by Michael Chen (sth4nth@gmail.com).
-
-
 fprintf('Variantional Bayeisn Kmeans: running ... \n');
 [d,n] = size(X);
 if nargin < 3

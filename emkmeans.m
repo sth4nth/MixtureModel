@@ -1,6 +1,5 @@
 function [label, model, llh] = emkmeans(X, init)
-% EM algorithm for spherical (isotropic) Gaussian mixture model with common
-% variance (aka kmeans model)
+% EM (isotropic) Gaussian mixture model with common variance (aka kmeans model)
 % Written by Michael Chen (sth4nth@gmail.com).
 fprintf('EM for Kmeans: running ... \n');
 R = initialization(X, init);
